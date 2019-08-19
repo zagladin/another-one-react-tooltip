@@ -1,14 +1,18 @@
 import React from 'react';
-import './App.css';
+import './App.scss';
 import Tooltip from "./tooltip/Tooltip";
 
 const App: React.FC = () => {
   return (
     <div className="App">
-      <header className="App-header">
+      <header className="bg">
 
-        <Tooltip enable={true} color={'white'}>
-          Children
+        <Tooltip
+          enable={true}
+          position={'top'}
+          color={'inform'}
+        >
+          Lorem ipsum
         </Tooltip>
 
       </header>
