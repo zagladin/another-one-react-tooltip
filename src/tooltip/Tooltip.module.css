@@ -1,0 +1,39 @@
+:root {
+    --bu: 12px;
+    --blue-color: #50b2ff;
+    --black-color: black;
+    --grey-color: grey;
+    --white-color: white;
+}
+
+.wrapper {
+    position: absolute;
+    bottom: calc(2 * var(--bu));
+    width: 98%;
+    height: calc(4 * var(--bu));
+    border-radius: calc(0.5 * var(--bu));
+    /*border-top-left-radius: calc(0.5 * var(--bu));*/
+    /*border-top-right-radius: calc(0.5 * var(--bu));*/
+    background-color: var(--blue-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-duration: 2s;
+    animation-name: slow-popup;
+}
+
+.content {
+    color: var(--white-color);
+    font-size: calc(1.25 * var(--bu));
+}
+
+@keyframes slow-popup {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+
+}
